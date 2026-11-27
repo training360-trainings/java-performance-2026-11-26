@@ -349,7 +349,7 @@ Java 27 - JEP 536: JFR In-Process Data Redaction
   - `jdk.MethodTiming` - összesített értékek, min / átlag / max idő és hívásszám
   - Nem rögzít példány információkat és paramétereket, visszatérési értékeket
 
-```
+```shell
 java -XX:StartFlightRecording:jdk.MethodTiming#filter=employees.EmployeesController::listEmployees,filename=recording.jfr -jar target\employees-backend-0.0.1-SNAPSHOT.jar
 jfr view method-timing recording.jfr
 ```
@@ -386,6 +386,10 @@ IDEA-ban is megnyitható a jfr fájl
 ![Mandelbrot](images/value-class.png)
 
 `ValueObjectApplication`
+
+```shell
+java -jar target\benchmarks.jar
+```
 
 Megoldások:
 
